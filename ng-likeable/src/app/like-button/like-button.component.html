@@ -2,6 +2,7 @@
   <button 
     class="icon"
     [ngClass]="{liked: isLiked}"
+    (click)="toggleIsLiked()"
     >
     ❤ {{ nbLike }}
   </button>

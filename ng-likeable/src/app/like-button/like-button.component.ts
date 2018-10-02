@@ -15,4 +15,7 @@ export class LikeButtonComponent implements OnInit {
   ngOnInit() {
   }
 
+  public toggleIsLiked() {
+    this.isLiked = !this.isLiked;
+  }
 }
