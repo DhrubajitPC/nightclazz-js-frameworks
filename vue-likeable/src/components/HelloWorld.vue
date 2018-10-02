@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Hello from vue</h1>
-    <like-button />
+    <like-button :nbLikes="3" />
   </div>
 </template>
 
