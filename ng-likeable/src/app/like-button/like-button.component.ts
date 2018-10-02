@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LikeButtonComponent implements OnInit {
 
+  public isLiked = true;
+
   constructor() { }
 
   ngOnInit() {
