@@ -1,5 +1,9 @@
 <template>
- <div></div> 
+  <div>
+    <button class="icon">
+      ❤
+    </button>
+  </div> 
 </template>
 
 <script>
