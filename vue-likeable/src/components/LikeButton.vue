@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="icon" :class="{liked: isLiked}">
+    <button @click="toggleLike()" class="icon" :class="{liked: isLiked}">
       ❤ {{nbLikes}}
     </button>
   </div> 
@@ -17,6 +17,11 @@ export default {
   data() {
     return {
       isLiked: true,
+    }
+  },
+  methods: {
+    toggleLike: function () {
+      this.isLiked = !this.isLiked
     }
   }
 }
