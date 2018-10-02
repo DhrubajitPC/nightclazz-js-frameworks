@@ -2,8 +2,8 @@ import React from 'react';
 import './like-button.css';
 
 export default class LikeButton extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       isLiked: true,
     };
@@ -14,7 +14,7 @@ export default class LikeButton extends React.Component {
     return (
       <div>
         <h1>Liking a button in react</h1>
-        <button className={iconClass}>❤</button>
+        <button className={iconClass}>❤ {this.props.nbLikes}</button>
       </div>
     )
   }
