@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button class="icon">
+    <button class="icon" :class="{liked: isLiked}">
       ❤
     </button>
   </div> 
@@ -8,10 +8,18 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      isLiked: true,
+    }
+  }
 }
 </script>
 
 <style>
+
+.liked {
+  color: red;
+}
 
 </style>
