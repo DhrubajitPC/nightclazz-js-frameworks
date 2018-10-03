@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- Load our React component. -->
+  <script src="react-like-button.js" type="text/babel"></script>
+  <script src="vue-like-button.js" defer></script>
+  <script src="index.js" type="text/babel" defer></script>
+
+  <!-- style -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Welcome to a combination of react and vue.</h1>
+  <div>
+    <div id="react-container"></div>
+  </div>
+  <div>
+    <div id="vue-container">
+      <div class="vue-border">
+        <button
+          @click="toggleLike()"
+          :class="{liked: isLiked}"
+        >Like ❤</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.liked {
+  color: red;
+}
+
+.react-border {
+  padding: 30px;
+  border: dashed blue;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.vue-border {
+  padding: 30px;
+  border: dashed greenyellow;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: transparent;
+}
